@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" version="1.1" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1200" height="630" fill="#fff"/>
+ <g transform="translate(500,215)">
+  <g fill="#FE6A3A">
+   <path d="M100 20c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80zm0 20c33.137 0 60 26.863 60 60s-26.863 60-60 60-60-26.863-60-60 26.863-60 60-60z"/>
+   <path d="m100 60-40 80h80l-40-80zm0 20 20 40h-40l20-40z"/>
+  </g>
+ </g>
+ <text x="600" y="450" text-anchor="middle" fill="#1a1a1a" font-family="Arial" font-size="48">
+  Modern Engineering Accelerator
+ </text>
+ <text x="600" y="500" text-anchor="middle" fill="#666" font-family="Arial" font-size="32">
+  Accelerating Through Excellence
+ </text>
+</svg> 
