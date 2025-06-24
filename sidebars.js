@@ -5,10 +5,31 @@ const sidebars = {
       type: "category",
       label: "Foundation First",
       items: [
-        "foundation/introduction",
-        "foundation/why-cd-matters",
-        "foundation/cd-principles",
-        "foundation/xp-practices",
+        {
+          type: "doc",
+          id: "foundation/introduction",
+          label: "Introduction to Engineering Excellence",
+        },
+        {
+          type: "doc",
+          id: "foundation/why-cd-matters",
+          label: "Why Continuous Delivery Matters",
+        },
+        {
+          type: "doc",
+          id: "foundation/agile-transformation-pitfalls",
+          label: "The Pitfalls of Agile Without Engineering",
+        },
+        {
+          type: "doc",
+          id: "foundation/cd-principles",
+          label: "Continuous Delivery Principles",
+        },
+        {
+          type: "doc",
+          id: "foundation/xp-practices",
+          label: "Extreme Programming Practices",
+        },
       ],
     },
     {

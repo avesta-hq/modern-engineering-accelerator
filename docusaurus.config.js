@@ -85,7 +85,7 @@ const config = {
             items: [
               {
                 label: "Foundations",
-                to: "/docs/foundations/introduction",
+                to: "/docs/foundation/introduction",
               },
               {
                 label: "SOPs",
