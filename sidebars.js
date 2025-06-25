@@ -51,8 +51,8 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Advanced Topics",
-      items: ["advanced/test-shield", "advanced/codescene", "advanced/quality-metrics"],
+      label: "Strategic Solutions",
+      items: ["advanced/test-shield", "advanced/quality-metrics"],
     },
   ],
 };
