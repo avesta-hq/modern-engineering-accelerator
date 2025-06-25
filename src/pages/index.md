@@ -17,25 +17,39 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 </div>
 
 <div class="features-container">
+<div class="top-row">
+  <div class="feature-card">
+    <h3>Strong Foundations</h3>
+    <p>Extreme Programming (XP) and Continuous Delivery (CD) principles form the bedrock of efficient software delivery. These foundations are essential before leveraging AI effectively.</p>
+    <a href="/docs/foundation/introduction" class="learn-more">Learn More →</a>
+  </div>
 
-<div class="feature-card">
-  <h3>Strong Foundations</h3>
-  <p>Build on solid engineering practices with XP and CD principles as your foundation. Quality and excellence are not optional - they're essential for true speed.</p>
-  <a href="/docs/foundation/introduction" class="learn-more">Learn More →</a>
+  <div class="feature-card">
+    <h3>Practical Learning</h3>
+    <p>A real-world sandbox environment for hands-on experience with XP and CD practices, demonstrating how to implement CD principles in practice.</p>
+    <a href="/docs/sandbox/overview" class="learn-more">Explore Sandbox →</a>
+  </div>
+
+  <div class="feature-card">
+    <h3>Strategic Solutions</h3>
+    <p>Data-driven tools for measuring and improving engineering effectiveness, enhanced by AI capabilities built on solid engineering practices.</p>
+    <a href="/docs/advanced/test-shield" class="learn-more">Discover Tools →</a>
+  </div>
 </div>
 
-<div class="feature-card">
-  <h3>Standardized Excellence</h3>
-  <p>Follow battle-tested SOPs that ensure consistency and quality. Learn how to maintain high standards while moving fast.</p>
-  <a href="/docs/foundation/cd-principles" class="learn-more">Explore SOPs →</a>
-</div>
+<div class="bottom-row">
+  <div class="feature-card">
+    <h3>Scalable Knowledge</h3>
+    <p>A platform for organizations to learn and implement engineering best practices through standardized operating procedures (SOPs) aligned with XP/CD principles.</p>
+    <a href="/docs/foundation/engineering-sops" class="learn-more">Browse SOPs →</a>
+  </div>
 
-<div class="feature-card">
-  <h3>AI-Powered Acceleration</h3>
-  <p>Leverage AI to accelerate your already-excellent practices. Scale your engineering capabilities without compromising quality.</p>
-  <a href="/docs/advanced/test-shield" class="learn-more">See How →</a>
+  <div class="feature-card highlight-card">
+    <h3>The AI Advantage</h3>
+    <p>While others rush to adopt AI tools, true competitive advantage comes from using AI on top of strong engineering foundations. We help you build excellence first, then leverage AI to accelerate your well-established practices.</p>
+    <a href="/docs/foundation/introduction#the-ai-advantage-through-engineering-excellence" class="learn-more">Learn Our Approach →</a>
+  </div>
 </div>
-
 </div>
 
 ## Why Choose Our Approach?
@@ -92,10 +106,22 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 <style>
 {`
 .features-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   margin: 3rem 0;
+}
+
+.top-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.bottom-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .feature-card {
@@ -103,6 +129,26 @@ In today's AI-driven world, true speed comes from strong engineering foundations
   border-radius: 8px;
   background: var(--ifm-card-background-color);
   box-shadow: var(--ifm-global-shadow-lw);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-card {
+  background: linear-gradient(to bottom right, var(--ifm-color-primary-lightest), var(--ifm-color-primary-light));
+  color: var(--ifm-color-emphasis-900);
+}
+
+.highlight-card .learn-more {
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Make cards responsive on smaller screens */
+@media (max-width: 996px) {
+  .top-row,
+  .bottom-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 .benefits-container {
@@ -125,7 +171,8 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 
 .learn-more {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
   font-weight: 600;
 }
 `}
