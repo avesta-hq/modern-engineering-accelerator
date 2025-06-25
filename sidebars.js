@@ -52,7 +52,7 @@ const sidebars = {
     {
       type: "category",
       label: "Strategic Solutions",
-      items: ["advanced/test-shield", "advanced/engineering-metrics"],
+      items: ["advanced/test-shield", "advanced/engineering-metrics", "advanced/engineering-academy"],
     },
   ],
 };
