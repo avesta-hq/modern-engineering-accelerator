@@ -35,7 +35,8 @@ const sidebars = {
     {
       type: "category",
       label: "CD Sandbox Project",
-      items: ["sandbox/overview", "sandbox/implementation-plan", "sandbox/project-structure", "sandbox/test-strategy"],
+      items: ["sandbox/overview", "sandbox/test-strategy"],
+      //items: ["sandbox/overview", "sandbox/implementation-plan", "sandbox/project-structure", "sandbox/test-strategy"],
     },
     {
       type: "category",
@@ -44,7 +45,7 @@ const sidebars = {
         "pipeline/overview",
         "pipeline/commit-stage",
         "pipeline/acceptance-stage",
-        "pipeline/uat-stage",
+        //"pipeline/uat-stage",
         "pipeline/release-stage",
       ],
     },
