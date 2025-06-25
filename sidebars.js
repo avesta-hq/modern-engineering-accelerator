@@ -30,6 +30,11 @@ const sidebars = {
           id: "foundation/xp-practices",
           label: "Extreme Programming Practices",
         },
+        {
+          type: "doc",
+          id: "foundation/engineering-sops",
+          label: "Engineering SOPs",
+        },
       ],
     },
     {
