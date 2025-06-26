@@ -32,6 +32,11 @@ const sidebars = {
         },
         {
           type: "doc",
+          id: "foundation/product-discovery",
+          label: "Product Discovery Practices",
+        },
+        {
+          type: "doc",
           id: "foundation/engineering-sops",
           label: "Engineering SOPs",
         },
@@ -58,6 +63,12 @@ const sidebars = {
       type: "category",
       label: "Strategic Solutions",
       items: ["advanced/test-shield", "advanced/engineering-metrics", "advanced/engineering-academy"],
+    },
+    {
+      type: "category",
+      //id: "context-matters",
+      label: "Conclusion",
+      items: ["conclusion/context-matters"],
     },
   ],
 };
