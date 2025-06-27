@@ -39,6 +39,8 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/chirag1507/modern-engineering-accelerator/tree/main/",
+          routeBasePath: "docs",
+          path: "docs",
         },
         blog: {
           showReadingTime: true,
@@ -70,11 +72,11 @@ const config = {
             label: "Documentation",
           },
           { to: "/blog", label: "Blog", position: "left" },
-          {
+          /* {
             href: "https://github.com/chirag1507/modern-engineering-accelerator",
             label: "GitHub",
             position: "right",
-          },
+          }, */
         ],
       },
       footer: {
