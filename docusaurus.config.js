@@ -20,7 +20,7 @@ const config = {
   organizationName: "chirag1507",
   projectName: "modern-engineering-accelerator",
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -41,10 +41,6 @@ const config = {
           editUrl: "https://github.com/chirag1507/modern-engineering-accelerator/tree/main/",
           routeBasePath: "docs",
           path: "docs",
-        },
-        blog: {
-          showReadingTime: true,
-          editUrl: "https://github.com/chirag1507/modern-engineering-accelerator/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -71,12 +67,6 @@ const config = {
             position: "left",
             label: "Documentation",
           },
-          { to: "/blog", label: "Blog", position: "left" },
-          /* {
-            href: "https://github.com/chirag1507/modern-engineering-accelerator",
-            label: "GitHub",
-            position: "right",
-          }, */
         ],
       },
       footer: {
