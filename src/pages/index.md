@@ -78,7 +78,7 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 
 </div>
 
-## Your Path to Engineering Excellence
+<!-- ## Your Path to Engineering Excellence
 
 1. **Build Strong Foundations**
 
@@ -95,7 +95,7 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 3. **Accelerate with AI**
    - Leverage AI on solid foundations
    - Scale engineering capabilities
-   - Move fast without compromising quality
+   - Move fast without compromising quality -->
 
 <div class="cta-container">
   <a href="/docs/foundation/introduction" class="button button--secondary button--lg">

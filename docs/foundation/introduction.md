@@ -66,6 +66,7 @@ Build your engineering excellence on proven principles:
 - [Why Continuous Delivery Matters](./why-cd-matters.md)
 - [Continuous Delivery Principles](./cd-principles.md)
 - [Extreme Programming Practices](./xp-practices.md)
+- [Product Discovery Practices](./product-discovery.md)
 - [Avoiding Agile Transformation Pitfalls](./agile-transformation-pitfalls.md)
 
 ### 2. Hands-on Learning

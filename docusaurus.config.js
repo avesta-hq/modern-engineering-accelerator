@@ -79,35 +79,7 @@ const config = {
       },
       footer: {
         style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Foundations",
-                to: "/docs/foundation/introduction",
-              },
-              {
-                label: "SOPs",
-                to: "/docs/sops/introduction",
-              },
-              {
-                label: "Acceleration",
-                to: "/docs/acceleration/introduction",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "GitHub Discussions",
-                href: "https://github.com/chirag1507/modern-engineering-accelerator/discussions",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Modern Engineering Accelerator. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Modern Engineering Accelerator.`,
       },
       prism: {
         theme: lightCodeTheme,

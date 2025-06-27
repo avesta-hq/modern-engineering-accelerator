@@ -13,6 +13,23 @@ The CD sandbox project demonstrates:
 5. Modern testing practices based on the Test Pyramid
 6. Standards and SOPs for scaling engineering practices
 
+## User Story Map
+
+The Digital Kudos Wall project started with a collaborative user story mapping session to create shared understanding and define the MVP scope. The story map helps visualize:
+
+- The end-to-end user journey
+- Core user activities and tasks
+- MVP feature scope
+- Future enhancements and iterations
+
+You can view our user story map below:
+
+![User Story Map](../images/user-story-map.png)
+
+[📥 Download User Story Map PDF](../images/user-story-map.pdf)
+
+For more details about user story mapping and how we use it in our process, see our [Product Discovery Practices](../foundation/product-discovery.md) guide.
+
 ## Project Structure
 
 The project is organized into multiple repositories, each with a specific purpose:
@@ -139,7 +156,5 @@ This sandbox project serves as a learning tool:
 
 ## Next Steps
 
-1. [Implementation Plan](./implementation-plan.md) - Detailed guide for implementing features
-2. [Project Structure](./project-structure.md) - In-depth look at the codebase organization
-3. [Test Strategy](./test-strategy.md) - Comprehensive testing approach
-4. [Pipeline Overview](../pipeline/overview.md) - CD pipeline details
+1. [Test Strategy](./test-strategy.md) - Comprehensive testing approach
+2. [Pipeline Overview](../pipeline/overview.md) - CD pipeline details
