@@ -178,6 +178,51 @@ backend_image_tag:
    - Network isolation
    - Port mapping
 
+### Example Successful Run
+
+![Successful Release Stage Run](../images/cd-pipeline/successfull-release-stage.png)
+
+A successful release stage run executes all steps in sequence:
+
+1. **Check Services (25s)**
+
+   - Install Pact CLI
+   - Debug Pact Broker configuration
+   - Verify frontend deployment compatibility
+   - Verify backend deployment compatibility
+
+2. **Deploy to UAT (1m 23s)**
+
+   - Set image URIs and tags
+   - Deploy to UAT environment via SSH
+   - Set up database and migrations
+   - Configure Docker Compose
+   - Pull latest images
+   - Start services
+   - Verify service health
+
+3. **Record State (4s)**
+
+   - Record frontend deployment in Pact Broker
+   - Record backend deployment in Pact Broker
+   - Update deployment state files
+   - Commit version records
+
+4. **Smoke Tests (4m 45s)**
+   - Set up test environment
+   - Install test dependencies
+   - Run smoke test suite
+   - Verify deployment success
+
+Total pipeline execution time: ~6m 24s
+
+This efficient execution is achieved through:
+
+- Parallel service deployment where possible
+- Optimized smoke test execution
+- Efficient state management
+- Automated health checks
+
 ## Next Steps
 
 1. [Advanced Topics](../advanced/test-shield.md)
