@@ -169,7 +169,6 @@ As Kent Beck says:
 See these practices in action:
 
 1. [CD Sandbox Project Overview](../sandbox/overview.md)
-2. [Implementation Plan](../sandbox/implementation-plan.md)
 
 Remember Kent Beck's wisdom:
 

@@ -166,7 +166,6 @@ Based on industry-leading practices from:
 ## Resources
 
 - [Engineering Metrics Playbook](https://main.d2pjjk07cu670c.amplifyapp.com/)
-- [Modern Test Pyramid Guide](https://journal.optivem.com/p/modern-test-pyramid-visual)
 - [Digital Kudos Wall Repository](https://github.com/username/digital-kudos-wall)
 
 Join us in building the foundation for fast, sustainable software delivery through engineering excellence.

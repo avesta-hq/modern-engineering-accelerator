@@ -23,8 +23,6 @@ Organizations often face critical challenges when attempting to accelerate deliv
 5. Increasing regression bugs
 6. "Feature freeze" periods that slow down delivery
 
-As Valentina Jemuović points out:
-
 > "Continuous Delivery is the ONLY way to ensure a sustainable pace of delivery. You can buy a 'tonne' of Scrum, and a 'tonne' of Kanban... but if the team is not technically equipped in CI/CD practices (and if no support is provided), then sorry but the agile transformation will fail."
 
 ## Common Misconceptions

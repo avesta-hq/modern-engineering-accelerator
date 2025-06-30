@@ -137,12 +137,6 @@ The foundation for true agility must include:
    - Continuous Integration
    - Code quality metrics
 
-## Why This Matters
-
-As Richard Smith explains about automated testing:
-
-> "If you have a long running project (like in a product company) then you need automated regression tests, otherwise your regression tests either end up eating up an unreasonable amount of your development cycle, or you don't do them properly and end up with bugs making it to production."
-
 ## The Path Forward
 
 To achieve sustainable delivery speed:
@@ -180,6 +174,5 @@ To achieve sustainable delivery speed:
 
 1. [CD Principles](/docs/foundation/cd-principles)
 2. [XP Practices](/docs/foundation/xp-practices)
-3. [Engineering Excellence](/docs/foundation/engineering-excellence)
 
 Remember: True agility comes from technical excellence. Process frameworks like Scrum are necessary but not sufficient - they must be built on a foundation of solid engineering practices.
