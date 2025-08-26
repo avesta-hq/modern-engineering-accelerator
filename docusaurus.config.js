@@ -38,7 +38,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/chirag1507/modern-engineering-accelerator/tree/main/",
+          editUrl:
+            "https://github.com/chirag1507/modern-engineering-accelerator/tree/main/",
           routeBasePath: "docs",
           path: "docs",
         },
@@ -48,6 +49,11 @@ const config = {
       }),
     ],
   ],
+
+  themes: ["@docusaurus/theme-mermaid"],
+  markdown: {
+    mermaid: true,
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -81,6 +87,9 @@ const config = {
         defaultMode: "light",
         disableSwitch: false,
         respectPrefersColorScheme: true,
+      },
+      mermaid: {
+        theme: { light: "neutral", dark: "forest" },
       },
     }),
 };
