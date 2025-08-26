@@ -4,8 +4,52 @@
  * work well for content-first websites.
  */
 
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Aktiv Grotesk Font Face Declarations with Fallbacks */
+@font-face {
+  font-family: "Aktiv Grotesk";
+  src: url("/fonts/aktiv-grotesk/AktivGrotesk-Regular.woff2") format("woff2"),
+    url("/fonts/aktiv-grotesk/AktivGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aktiv Grotesk";
+  src: url("/fonts/aktiv-grotesk/AktivGrotesk-Medium.woff2") format("woff2"),
+    url("/fonts/aktiv-grotesk/AktivGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aktiv Grotesk";
+  src: url("/fonts/aktiv-grotesk/AktivGrotesk-Bold.woff2") format("woff2"),
+    url("/fonts/aktiv-grotesk/AktivGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* You can override the default Infima variables here. */
 :root {
+  /* Typography - Override Docusaurus defaults */
+  --ifm-font-family-primary: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  --ifm-font-family-secondary: "Work Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  --ifm-font-family-base: var(--ifm-font-family-secondary);
+
+  /* Force font family overrides */
+  --ifm-font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* Brand Color System */
+  /* Primary - Avesta Coral */
   --ifm-color-primary: #fe6a3a;
   --ifm-color-primary-dark: #fe5520;
   --ifm-color-primary-darker: #fe4813;
@@ -13,12 +57,36 @@
   --ifm-color-primary-light: #fe7f54;
   --ifm-color-primary-lighter: #fe8c61;
   --ifm-color-primary-lightest: #fea98b;
+
+  /* Secondary Colors */
+  --avesta-deep-teal: #224242;
+  --avesta-deep-teal-dark: #1a3535;
+  --avesta-deep-teal-darker: #142928;
+  --avesta-carnation-pink: #ffa3be;
+  --avesta-mineral-green: #377d71;
+  --avesta-cloud-blue: #8fb8f8;
+
+  /* Background Colors */
+  --avesta-soft-beige: #fffdf4; /* Correct main background color for light theme */
+  --avesta-warm-beige: #fe6a3a; /* Note: This seems to match coral in your specs */
+
+  /* Typography Colors */
+  --ifm-color-content-primary: var(--avesta-deep-teal);
+  --ifm-color-content-secondary: #2e4f4f;
+  --ifm-color-content-subtle: #8a9a9a;
+
+  /* Light Theme Background - Warm Cream */
+  --ifm-background-color: var(--avesta-soft-beige);
+  --ifm-background-surface-color: #fffef7;
+
+  /* Code */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(34, 66, 66, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark Mode - Deep Teal Base with Brand Colors */
 [data-theme="dark"] {
+  /* Primary colors remain vibrant in dark mode */
   --ifm-color-primary: #fe6a3a;
   --ifm-color-primary-dark: #fe5520;
   --ifm-color-primary-darker: #fe4813;
@@ -26,27 +94,486 @@
   --ifm-color-primary-light: #fe7f54;
   --ifm-color-primary-lighter: #fe8c61;
   --ifm-color-primary-lightest: #fea98b;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Dark mode backgrounds - Deep Teal shade system */
+  --ifm-background-color: #070d0d; /* Deep teal shade for dark theme */
+  --ifm-background-surface-color: var(--avesta-deep-teal-dark);
+  --ifm-color-emphasis-100: var(--avesta-deep-teal-darker);
+  --ifm-color-emphasis-200: #0f1f1f;
+  --ifm-color-emphasis-300: #0a1818;
+  --ifm-color-emphasis-0: #050a0a;
+
+  /* Typography in dark mode */
+  --ifm-color-content-primary: var(--avesta-soft-beige);
+  --ifm-color-content-secondary: #e8d6d8;
+  --ifm-color-content-subtle: #c4a8ab;
+
+  /* Navbar in dark mode - Avesta Coral */
+  --ifm-navbar-background-color: var(
+    --ifm-color-primary
+  ); /* Avesta Coral for dark theme navbar */
+  --ifm-navbar-link-color: white;
+
+  /* Code highlighting */
+  --docusaurus-highlighted-code-line-bg: rgba(254, 106, 58, 0.1);
 }
 
-/* Custom styles */
+/* Custom Component Styles */
+
+/* Navbar - Deep Teal for Light Theme */
 .navbar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(
+    --avesta-deep-teal
+  ); /* #224242 Deep Teal for light theme */
+  box-shadow: 0 2px 8px rgba(34, 66, 66, 0.15);
 }
 
+.navbar__title,
+.navbar__item {
+  color: var(--avesta-soft-beige) !important;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Dark theme navbar - Avesta Coral */
+[data-theme="dark"] .navbar {
+  background-color: var(
+    --ifm-color-primary
+  ); /* #FE6A3A Avesta Coral for dark theme */
+  box-shadow: 0 2px 8px rgba(254, 106, 58, 0.15);
+}
+
+[data-theme="dark"] .navbar__title,
+[data-theme="dark"] .navbar__item {
+  color: white !important;
+}
+
+[data-theme="dark"] .navbar__link:hover,
+[data-theme="dark"] .navbar__link--active {
+  color: var(--avesta-deep-teal) !important;
+}
+
+/* Theme Toggle Icon Styling */
+/* Light theme toggle icon */
+.navbar__toggle {
+  color: var(--avesta-soft-beige) !important;
+}
+
+.navbar__toggle:hover {
+  background-color: rgba(255, 253, 244, 0.1);
+}
+
+/* Dark theme toggle icon */
+[data-theme="dark"] .navbar__toggle {
+  color: white !important;
+}
+
+[data-theme="dark"] .navbar__toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Theme toggle button specific styling */
+button[title*="theme"],
+.navbar__item--right button {
+  border-radius: 6px;
+  padding: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Light theme - theme toggle */
+button[title*="theme"]:hover {
+  background-color: rgba(255, 253, 244, 0.15) !important;
+}
+
+/* Dark theme - theme toggle */
+[data-theme="dark"] button[title*="theme"]:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Ensure toggle icon is visible and properly sized */
+.navbar__toggle svg,
+button[title*="theme"] svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Fix toggle icon colors specifically */
+.navbar__toggle[title*="Switch"] {
+  color: var(--avesta-soft-beige) !important;
+}
+
+[data-theme="dark"] .navbar__toggle[title*="Switch"] {
+  color: white !important;
+}
+
+/* Additional theme toggle selectors for comprehensive coverage */
+.navbar__items--right .navbar__toggle,
+.navbar__items--right button[aria-label*="theme"],
+.navbar__items--right button[title*="dark"],
+.navbar__items--right button[title*="light"] {
+  color: var(--avesta-soft-beige) !important;
+  background: transparent;
+  border: none;
+}
+
+[data-theme="dark"] .navbar__items--right .navbar__toggle,
+[data-theme="dark"] .navbar__items--right button[aria-label*="theme"],
+[data-theme="dark"] .navbar__items--right button[title*="dark"],
+[data-theme="dark"] .navbar__items--right button[title*="light"] {
+  color: white !important;
+}
+
+/* Fix any remaining theme toggle issues */
+.clean-btn {
+  color: inherit !important;
+}
+
+/* Comprehensive theme toggle fix */
+.navbar [class*="toggle"],
+.navbar [class*="colorModeToggle"],
+.navbar button[class*="toggle"] {
+  color: var(--avesta-soft-beige) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+[data-theme="dark"] .navbar [class*="toggle"],
+[data-theme="dark"] .navbar [class*="colorModeToggle"],
+[data-theme="dark"] .navbar button[class*="toggle"] {
+  color: white !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Ensure hover states work */
+.navbar [class*="toggle"]:hover,
+.navbar [class*="colorModeToggle"]:hover,
+.navbar button[class*="toggle"]:hover {
+  background-color: rgba(255, 253, 244, 0.15) !important;
+  border-radius: 6px;
+}
+
+[data-theme="dark"] .navbar [class*="toggle"]:hover,
+[data-theme="dark"] .navbar [class*="colorModeToggle"]:hover,
+[data-theme="dark"] .navbar button[class*="toggle"]:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-radius: 6px;
+}
+
+/* Footer - Deep Teal Gradient */
 .footer {
-  --ifm-footer-background-color: #1a1a1a;
+  background: linear-gradient(
+    135deg,
+    var(--avesta-deep-teal) 0%,
+    var(--avesta-deep-teal-dark) 100%
+  );
+  color: var(--avesta-soft-beige);
 }
 
+.footer__title {
+  color: var(--avesta-soft-beige);
+}
+
+.footer__item {
+  color: #c4a8ab;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* Hero Section - Avesta Coral Gradient */
 .hero {
-  background: linear-gradient(45deg, #fe6a3a 30%, #fe8c61 90%);
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary) 0%,
+    var(--ifm-color-primary-light) 50%,
+    var(--ifm-color-primary-lighter) 100%
+  );
   color: white;
+  padding: 4rem 0;
 }
 
 .hero__title {
   color: white;
+  font-weight: 700;
 }
 
 .hero__subtitle {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Strong Font Overrides - Ensure Aktiv Grotesk renders */
+/* Force Aktiv Grotesk on all H1 elements and titles */
+h1,
+.hero__title,
+.navbar__title,
+article h1,
+.markdown h1 {
+  font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+  color: var(--avesta-deep-teal-darker); /* Deep Teal darker shade */
+}
+
+/* Force Work Sans on other headings */
+h2,
+h3,
+h4,
+h5,
+h6,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ifm-color-content-primary); /* Deep Teal */
+}
+
+/* Force Work Sans on body text */
+p,
+span,
+li,
+td,
+th,
+article p,
+article li,
+.markdown p,
+.markdown li,
+body {
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
+  color: var(--ifm-color-content-primary);
+}
+
+/* Navbar specific styling */
+.navbar__title {
+  font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.navbar__item,
+.navbar__link {
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
+}
+
+/* Logo Styling for Both Themes */
+.navbar__logo {
+  height: 32px;
+  max-width: none;
+  margin-right: 12px;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure logo visibility and proper sizing */
+.navbar__logo img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+/* Logo hover effect */
+.navbar__brand:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+/* Single logo styling for both themes */
+.navbar__logo img[src*="Avesta-logo"] {
+  filter: none; /* No filters needed - logo designed to work on both backgrounds */
+}
+
+/* Mobile navbar logo adjustments */
+@media screen and (max-width: 768px) {
+  .navbar__logo {
+    height: 28px; /* Slightly smaller on mobile */
+  }
+
+  .navbar__logo img {
+    height: 28px;
+  }
+
+  .navbar__brand {
+    margin-right: 8px;
+  }
+}
+
+/* Ensure logo loads properly */
+.navbar__logo img {
+  object-fit: contain;
+  max-height: 32px;
+}
+
+/* Fix logo alignment with title */
+.navbar__brand .navbar__title {
+  margin-left: 4px;
+}
+
+/* Subtle text styling */
+.text-subtle,
+.footer__item,
+small {
+  color: var(--ifm-color-content-subtle);
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
+}
+
+/* Secondary Color Applications */
+/* Success states - Mineral Green */
+.alert--success,
+.badge--success {
+  background-color: var(--avesta-mineral-green);
+  color: white;
+}
+
+/* Info states - Cloud Blue */
+.alert--info,
+.badge--info {
+  background-color: var(--avesta-cloud-blue);
+  color: white;
+}
+
+/* Highlights - Carnation Pink */
+.alert--warning,
+.badge--warning {
+  background-color: var(--avesta-carnation-pink);
+  color: var(--avesta-deep-teal);
+}
+
+/* Secondary buttons - Mineral Green */
+.button--secondary {
+  background-color: var(--avesta-mineral-green);
+  color: white;
+  border-color: var(--avesta-mineral-green);
+}
+
+.button--secondary:hover {
+  background-color: #2d6258;
+  border-color: #2d6258;
+}
+
+/* Additional Brand Enhancements */
+/* Improved shadows and spacing for light theme */
+.card {
+  box-shadow: 0 4px 16px rgba(34, 66, 66, 0.08);
+  border: 1px solid rgba(34, 66, 66, 0.06);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Adjusted for warm cream background */
+}
+
+/* Dark theme card styling */
+[data-theme="dark"] .card {
+  box-shadow: 0 4px 16px rgba(7, 13, 13, 0.4);
+  border: 1px solid rgba(34, 66, 66, 0.3);
+  background-color: var(--avesta-deep-teal-dark);
+}
+
+/* Link colors */
+.markdown a {
+  color: var(--avesta-cloud-blue);
+}
+
+.markdown a:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: 8px;
+  border: 1px solid rgba(34, 66, 66, 0.1);
+}
+
+/* Table of contents */
+.table-of-contents__link {
+  color: var(--ifm-color-content-secondary);
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+}
+
+/* Responsive design improvements */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+}
+
+/* Font Loading Debug - Remove after confirming fonts work */
+/* This helps verify if Aktiv Grotesk is loading */
+.font-test {
+  font-family: "Aktiv Grotesk", serif !important;
+  font-weight: 700;
+  font-size: 2rem;
+  color: red;
+  margin: 20px 0;
+}
+
+/* Additional strong overrides for main content */
+.main-wrapper h1,
+main h1,
+.docusaurus-wrapper h1 {
+  font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* Content container styling for better readability */
+.container,
+.main-wrapper,
+article {
+  background-color: transparent;
+}
+
+/* Sidebar styling for better contrast */
+.theme-doc-sidebar-container {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(34, 66, 66, 0.1);
+}
+
+[data-theme="dark"] .theme-doc-sidebar-container {
+  background-color: rgba(26, 53, 53, 0.6);
+  border-right: 1px solid rgba(34, 66, 66, 0.3);
+}
+
+/* Content wrapper improvements */
+.docusaurus-wrapper {
+  background-color: var(--ifm-background-color);
+}
+
+/* Table styling */
+table {
+  border: 1px solid rgba(34, 66, 66, 0.1);
+}
+
+[data-theme="dark"] table {
+  border: 1px solid rgba(34, 66, 66, 0.3);
 }

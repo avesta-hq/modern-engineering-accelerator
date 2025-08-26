@@ -64,7 +64,7 @@ const config = {
         title: "Modern Engineering Accelerator",
         logo: {
           alt: "Modern Engineering Accelerator Logo",
-          src: "img/logo.svg",
+          src: "img/Avesta-logo.svg", // Same logo for both themes
         },
         items: [
           {
