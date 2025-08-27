@@ -10,3 +10,87 @@
   width: 200px;
   margin-bottom: 1rem;
 }
+
+.featureCard {
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  margin: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.featureCard h3 {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.featureCard p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Carnation Pink Gradient - Pink to Cream */
+.carnationPink {
+  background: linear-gradient(
+    135deg,
+    #ffa3be 0%,
+    #ffb5c7 25%,
+    #ffc7d0 50%,
+    #ffe4d9 75%,
+    #fffdf4 100%
+  );
+}
+
+/* Cloud Blue Gradient - Blue to Cream */
+.cloudBlue {
+  background: linear-gradient(
+    135deg,
+    #8fb8f8 0%,
+    #a3c5f9 25%,
+    #b7d2fa 50%,
+    #d4e4fc 75%,
+    #fffdf4 100%
+  );
+}
+
+/* Mineral Green Gradient - Green to Cream */
+.mineralGreen {
+  background: linear-gradient(
+    135deg,
+    #377d71 0%,
+    #4f9287 25%,
+    #67a79d 50%,
+    #8cc0b4 75%,
+    #fffdf4 100%
+  );
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .featureCard h3 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="dark"] .featureCard p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .featureCard {
+    margin: 0.5rem 0;
+    min-height: 240px;
+    padding: 1.5rem 1rem;
+  }
+}

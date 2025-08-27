@@ -11,9 +11,7 @@ hide_table_of_contents: true
 In today's AI-driven world, true speed comes from strong engineering foundations. We help organizations build the bedrock of engineering excellence before accelerating with AI.
 
 <div class="cta-container">
-  <a href="/docs/foundation/introduction" class="button button--primary button--lg">
-    Start Your Excellence Journey
-  </a>
+<a href="/docs/foundation/introduction" class="button button--primary button--lg">Start Your Excellence Journey</a>
 </div>
 
 <div class="features-container">
@@ -97,12 +95,6 @@ In today's AI-driven world, true speed comes from strong engineering foundations
    - Scale engineering capabilities
    - Move fast without compromising quality -->
 
-<div class="cta-container">
-  <a href="/docs/foundation/introduction" class="button button--secondary button--lg">
-    Begin Your Journey
-  </a>
-</div>
-
 <style>
 {`
 .features-container {
@@ -167,6 +159,10 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 .cta-container {
   text-align: center;
   margin: 3rem 0;
+}
+
+.cta-container p {
+  margin: 0;
 }
 
 .learn-more {

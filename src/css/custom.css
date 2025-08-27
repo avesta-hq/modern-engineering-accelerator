@@ -4,9 +4,6 @@
  * work well for content-first websites.
  */
 
-/* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 /* Aktiv Grotesk Font Face Declarations with Fallbacks */
 @font-face {
   font-family: "Aktiv Grotesk";
@@ -40,9 +37,9 @@
   /* Typography - Override Docusaurus defaults */
   --ifm-font-family-primary: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, sans-serif;
-  --ifm-font-family-secondary: "Work Sans", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, sans-serif;
-  --ifm-font-family-base: var(--ifm-font-family-secondary);
+  --ifm-font-family-secondary: "Aktiv Grotesk", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --ifm-font-family-base: var(--ifm-font-family-primary);
 
   /* Force font family overrides */
   --ifm-font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas,
@@ -78,6 +75,17 @@
   /* Light Theme Background - Warm Cream */
   --ifm-background-color: var(--avesta-soft-beige);
   --ifm-background-surface-color: #fffef7;
+
+  /* Typography sizing */
+  --ifm-font-size-base: 18px;
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-h3-font-size: 1.5rem;
+  --ifm-h4-font-size: 1.25rem;
+  --ifm-h5-font-size: 1.125rem;
+  --ifm-h6-font-size: 1rem;
+  --ifm-small-font-size: 0.875rem;
+  --ifm-blockquote-font-size: 1.125rem;
 
   /* Code */
   --ifm-code-font-size: 95%;
@@ -316,11 +324,11 @@ article h1,
   font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, sans-serif !important;
   font-weight: 700 !important;
-  letter-spacing: -0.02em;
+  letter-spacing: normal;
   color: var(--avesta-deep-teal-darker); /* Deep Teal darker shade */
 }
 
-/* Force Work Sans on other headings */
+/* Force Aktiv Grotesk on other headings */
 h2,
 h3,
 h4,
@@ -336,14 +344,14 @@ article h6,
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, sans-serif !important;
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--ifm-color-content-primary); /* Deep Teal */
 }
 
-/* Force Work Sans on body text */
+/* Force Aktiv Grotesk on body text */
 p,
 span,
 li,
@@ -354,7 +362,7 @@ article li,
 .markdown p,
 .markdown li,
 body {
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, sans-serif !important;
   color: var(--ifm-color-content-primary);
 }
@@ -364,11 +372,13 @@ body {
   font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, sans-serif !important;
   font-weight: 600 !important;
+  letter-spacing: normal;
+  font-size: 1.4rem;
 }
 
 .navbar__item,
 .navbar__link {
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, sans-serif !important;
 }
 
@@ -433,7 +443,7 @@ body {
 .footer__item,
 small {
   color: var(--ifm-color-content-subtle);
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, sans-serif !important;
 }
 
@@ -459,16 +469,97 @@ small {
   color: var(--avesta-deep-teal);
 }
 
-/* Secondary buttons - Mineral Green */
-.button--secondary {
-  background-color: var(--avesta-mineral-green);
-  color: white;
-  border-color: var(--avesta-mineral-green);
+/* Primary buttons - Avesta Coral - Light Theme */
+.button--primary,
+[data-theme="light"] .button--primary,
+html[data-theme="light"] .button--primary {
+  background-color: #fe6a3a !important;
+  color: white !important;
+  border-color: #fe6a3a !important;
+  padding: 0.75rem 2rem !important;
+  line-height: 1.4 !important;
 }
 
-.button--secondary:hover {
-  background-color: #2d6258;
-  border-color: #2d6258;
+.button--primary:hover,
+[data-theme="light"] .button--primary:hover,
+html[data-theme="light"] .button--primary:hover {
+  background-color: #fe5520 !important;
+  border-color: #fe5520 !important;
+  color: white !important;
+}
+
+/* Secondary buttons - Avesta Coral - Light Theme */
+.button--secondary,
+[data-theme="light"] .button--secondary,
+html[data-theme="light"] .button--secondary {
+  background-color: #fe6a3a !important;
+  color: white !important;
+  border-color: #fe6a3a !important;
+  padding: 0.75rem 2rem !important;
+  line-height: 1.4 !important;
+}
+
+.button--secondary:hover,
+[data-theme="light"] .button--secondary:hover,
+html[data-theme="light"] .button--secondary:hover {
+  background-color: #fe5520 !important;
+  border-color: #fe5520 !important;
+  color: white !important;
+}
+
+/* Dark theme button styles */
+[data-theme="dark"] .button--primary,
+html[data-theme="dark"] .button--primary {
+  background-color: #fe6a3a !important;
+  color: white !important;
+  border-color: #fe6a3a !important;
+}
+
+[data-theme="dark"] .button--primary:hover,
+html[data-theme="dark"] .button--primary:hover {
+  background-color: #fe5520 !important;
+  border-color: #fe5520 !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .button--secondary,
+html[data-theme="dark"] .button--secondary {
+  background-color: #fe6a3a !important;
+  color: white !important;
+  border-color: #fe6a3a !important;
+}
+
+[data-theme="dark"] .button--secondary:hover,
+html[data-theme="dark"] .button--secondary:hover {
+  background-color: #fe5520 !important;
+  border-color: #fe5520 !important;
+  color: white !important;
+}
+
+/* Button general improvements */
+.button {
+  font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  box-sizing: border-box !important;
+}
+
+.button--lg {
+  font-size: 1.125rem !important;
+  padding: 1rem 2.5rem !important;
+}
+
+/* CTA container spacing fix */
+.cta-container {
+  margin: 2rem 0 !important;
 }
 
 /* Additional Brand Enhancements */
@@ -544,6 +635,7 @@ main h1,
   font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, sans-serif !important;
   font-weight: 700 !important;
+  letter-spacing: normal;
 }
 
 /* Content container styling for better readability */
