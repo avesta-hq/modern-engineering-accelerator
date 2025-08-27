@@ -254,7 +254,26 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 .benefit-item {
   padding: 1.5rem;
   border-radius: 8px;
-  background: var(--ifm-background-surface-color);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(34, 66, 66, 0.1);
+  box-shadow: 0 2px 12px rgba(34, 66, 66, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(34, 66, 66, 0.12);
+}
+
+/* Dark theme styling for benefit items */
+[data-theme="dark"] .benefit-item {
+  background: rgba(26, 53, 53, 0.6);
+  border: 1px solid rgba(34, 66, 66, 0.3);
+  box-shadow: 0 2px 12px rgba(7, 13, 13, 0.4);
+}
+
+[data-theme="dark"] .benefit-item:hover {
+  box-shadow: 0 4px 20px rgba(7, 13, 13, 0.5);
 }
 
 .cta-container {
