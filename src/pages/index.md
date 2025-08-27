@@ -16,19 +16,19 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 
 <div class="features-container">
 <div class="top-row">
-  <div class="feature-card">
+  <div class="feature-card gradient-carnation-pink">
     <h3>Strong Foundations</h3>
     <p>Extreme Programming (XP) and Continuous Delivery (CD) principles form the bedrock of efficient software delivery. These foundations are essential before leveraging AI effectively.</p>
     <a href="/docs/foundation/introduction" class="learn-more">Learn More →</a>
   </div>
 
-  <div class="feature-card">
+  <div class="feature-card gradient-cloud-blue">
     <h3>Practical Learning</h3>
     <p>A real-world sandbox environment for hands-on experience with XP and CD practices, demonstrating how to implement CD principles in practice.</p>
     <a href="/docs/sandbox/overview" class="learn-more">Explore Sandbox →</a>
   </div>
 
-  <div class="feature-card">
+  <div class="feature-card gradient-mineral-green">
     <h3>Strategic Solutions</h3>
     <p>Data-driven tools for measuring and improving engineering effectiveness, enhanced by AI capabilities built on solid engineering practices.</p>
     <a href="/docs/advanced/test-shield" class="learn-more">Discover Tools →</a>
@@ -36,13 +36,13 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 </div>
 
 <div class="bottom-row">
-  <div class="feature-card">
+  <div class="feature-card gradient-cloud-blue-coral">
     <h3>Scalable Knowledge</h3>
     <p>A platform for organizations to learn and implement engineering best practices through standardized operating procedures (SOPs) aligned with XP/CD principles.</p>
     <a href="/docs/foundation/engineering-sops" class="learn-more">Browse SOPs →</a>
   </div>
 
-  <div class="feature-card highlight-card">
+  <div class="feature-card gradient-mineral-green-coral">
     <h3>The AI Advantage</h3>
     <p>While others rush to adopt AI tools, true competitive advantage comes from using AI on top of strong engineering foundations. We help you build excellence first, then leverage AI to accelerate your well-established practices.</p>
     <a href="/docs/foundation/introduction#the-ai-advantage-through-engineering-excellence" class="learn-more">Learn Our Approach →</a>
@@ -124,6 +124,107 @@ In today's AI-driven world, true speed comes from strong engineering foundations
   height: 100%;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Carnation Pink Gradient - Pink to Cream */
+.gradient-carnation-pink {
+  background: linear-gradient(135deg, #ffa3be 0%, #ffb5c7 25%, #ffc7d0 50%, #ffe4d9 75%, #fffdf4 100%) !important;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.gradient-carnation-pink h3 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.gradient-carnation-pink p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.gradient-carnation-pink .learn-more {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+}
+
+/* Cloud Blue Gradient - Blue to Cream */
+.gradient-cloud-blue {
+  background: linear-gradient(135deg, #8fb8f8 0%, #a3c5f9 25%, #b7d2fa 50%, #d4e4fc 75%, #fffdf4 100%) !important;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.gradient-cloud-blue h3 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.gradient-cloud-blue p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.gradient-cloud-blue .learn-more {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+}
+
+/* Mineral Green Gradient - Green to Cream */
+.gradient-mineral-green {
+  background: linear-gradient(135deg, #377d71 0%, #4f9287 25%, #67a79d 50%, #8cc0b4 75%, #fffdf4 100%) !important;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.gradient-mineral-green h3 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.gradient-mineral-green p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.gradient-mineral-green .learn-more {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+}
+
+/* Cloud Blue to Coral Gradient - Scalable Knowledge */
+.gradient-cloud-blue-coral {
+  background: linear-gradient(135deg, #8fb8f8 0%, #a3c5f9 25%, #ff8c6a 75%, #fe6a3a 100%) !important;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.gradient-cloud-blue-coral h3 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.gradient-cloud-blue-coral p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.gradient-cloud-blue-coral .learn-more {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+}
+
+/* Mineral Green to Coral Gradient - The AI Advantage */
+.gradient-mineral-green-coral {
+  background: linear-gradient(135deg, #377d71 0%, #4f9287 25%, #ff8c6a 75%, #fe6a3a 100%) !important;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.gradient-mineral-green-coral h3 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.gradient-mineral-green-coral p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.gradient-mineral-green-coral .learn-more {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
 }
 
 .highlight-card {
