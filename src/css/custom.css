@@ -104,17 +104,17 @@
   --ifm-color-primary-lightest: #fea98b;
 
   /* Dark mode backgrounds - Deep Teal shade system */
-  --ifm-background-color: #0e1a1a; /* Perfect tealish background from shade card */
-  --ifm-background-surface-color: var(--avesta-deep-teal-dark);
+  --ifm-background-color: #0e1a1a !important; /* Perfect tealish background from shade card */
+  --ifm-background-surface-color: #0e1a1a !important;
   --ifm-color-emphasis-100: #070d0d;
   --ifm-color-emphasis-200: #112121;
   --ifm-color-emphasis-300: #142828;
   --ifm-color-emphasis-0: #030707;
 
   /* Typography in dark mode */
-  --ifm-color-content-primary: var(--avesta-soft-beige);
-  --ifm-color-content-secondary: #e8d6d8;
-  --ifm-color-content-subtle: #c4a8ab;
+  --ifm-color-content-primary: #dcd9c8;
+  --ifm-color-content-secondary: #c3c1b2;
+  --ifm-color-content-subtle: #aba99b;
 
   /* Navbar in dark mode - Avesta Coral */
   --ifm-navbar-background-color: var(
@@ -131,8 +131,8 @@
 /* Navbar - Match main background for Light Theme */
 .navbar {
   background-color: var(--avesta-soft-beige); /* Match main background */
-  border-bottom: 1px solid #d4c4a8; /* Dark beige divider */
-  box-shadow: none;
+  border-bottom: none;
+  box-shadow: 0 2px 8px rgba(34, 66, 66, 0.08);
 }
 
 .navbar__title,
@@ -150,13 +150,13 @@
   background-color: var(
     --ifm-background-color
   ); /* Match dark theme background */
-  border-bottom: 1px solid #3a4a4a; /* Darker beige divider for dark theme */
-  box-shadow: none;
+  border-bottom: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] .navbar__title,
 [data-theme="dark"] .navbar__item {
-  color: var(--avesta-soft-beige) !important;
+  color: #dcd9c8 !important;
 }
 
 [data-theme="dark"] .navbar__link:hover,
@@ -176,7 +176,7 @@
 
 /* Dark theme toggle icon */
 [data-theme="dark"] .navbar__toggle {
-  color: var(--avesta-soft-beige) !important;
+  color: #dcd9c8 !important;
 }
 
 [data-theme="dark"] .navbar__toggle:hover {
@@ -282,8 +282,8 @@ button[title*="theme"] svg {
 }
 
 [data-theme="dark"] .footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--ifm-color-content-secondary);
+  border-top: 1px solid rgba(220, 217, 200, 0.2);
+  color: #dcd9c8;
 }
 
 /* Hero Section - Avesta Coral Gradient */
@@ -661,7 +661,18 @@ article {
 
 /* Content wrapper improvements */
 .docusaurus-wrapper {
-  background-color: var(--ifm-background-color);
+  background-color: var(--ifm-background-color) !important;
+}
+
+/* Force dark theme background on body and html */
+[data-theme="dark"] body,
+[data-theme="dark"] html {
+  background-color: #0e1a1a !important;
+}
+
+[data-theme="dark"] .main-wrapper,
+[data-theme="dark"] main {
+  background-color: #0e1a1a !important;
 }
 
 /* Table styling */
@@ -698,4 +709,26 @@ table {
   display: inline-block;
   margin: 0 4px;
   font-size: 1em;
+}
+
+/* Text selection styles */
+::selection {
+  background-color: rgba(34, 66, 66, 0.2);
+  color: var(--avesta-deep-teal);
+}
+
+::-moz-selection {
+  background-color: rgba(34, 66, 66, 0.2);
+  color: var(--avesta-deep-teal);
+}
+
+/* Dark theme text selection */
+[data-theme="dark"] ::selection {
+  background-color: #fea98b;
+  color: #0e1a1a;
+}
+
+[data-theme="dark"] ::-moz-selection {
+  background-color: #fea98b;
+  color: #0e1a1a;
 }
