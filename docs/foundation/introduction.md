@@ -169,3 +169,16 @@ Based on industry-leading practices from:
 - [Digital Kudos Wall Repository](https://github.com/username/digital-kudos-wall)
 
 Join us in building the foundation for fast, sustainable software delivery through engineering excellence.
+
+<style>
+{`
+/* Custom title styling */
+h1:first-of-type {
+  color: #224242 !important;
+}
+
+[data-theme="dark"] h1:first-of-type {
+  color: #fe6a3a !important;
+}
+`}
+</style>
