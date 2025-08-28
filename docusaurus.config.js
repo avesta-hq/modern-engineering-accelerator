@@ -76,8 +76,8 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
-        copyright: `Copyright © ${new Date().getFullYear()} Modern Engineering Accelerator.`,
+        style: "light",
+        copyright: `© ${new Date().getFullYear()} avestahq.com • All rights reserved | Crafted with love for Engineering Excellence`,
       },
       prism: {
         theme: lightCodeTheme,

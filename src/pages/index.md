@@ -45,7 +45,7 @@ In today's AI-driven world, true speed comes from strong engineering foundations
   <div class="feature-card gradient-mineral-green-coral">
     <h3>The AI Advantage</h3>
     <p>While others rush to adopt AI tools, true competitive advantage comes from using AI on top of strong engineering foundations. We help you build excellence first, then leverage AI to accelerate your well-established practices.</p>
-    <a href="/docs/foundation/introduction#the-ai-advantage-through-engineering-excellence" class="learn-more">Learn Our Approach →</a>
+    <a href="/docs/foundation/introduction" class="learn-more">Learn Our Approach →</a>
   </div>
 </div>
 </div>
@@ -97,6 +97,15 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 
 <style>
 {`
+/* Custom title styling */
+h1:first-of-type {
+  color: #224242 !important;
+}
+
+[data-theme="dark"] h1:first-of-type {
+  color: #fe6a3a !important;
+}
+
 .features-container {
   display: flex;
   flex-direction: column;
@@ -118,7 +127,7 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 
 .feature-card {
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 16px;
   background: var(--ifm-card-background-color);
   box-shadow: var(--ifm-global-shadow-lw);
   height: 100%;
@@ -253,16 +262,10 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 
 .benefit-item {
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 16px;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(34, 66, 66, 0.1);
   box-shadow: 0 2px 12px rgba(34, 66, 66, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.benefit-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(34, 66, 66, 0.12);
 }
 
 /* Dark theme styling for benefit items */
@@ -270,10 +273,6 @@ In today's AI-driven world, true speed comes from strong engineering foundations
   background: rgba(26, 53, 53, 0.6);
   border: 1px solid rgba(34, 66, 66, 0.3);
   box-shadow: 0 2px 12px rgba(7, 13, 13, 0.4);
-}
-
-[data-theme="dark"] .benefit-item:hover {
-  box-shadow: 0 4px 20px rgba(7, 13, 13, 0.5);
 }
 
 .cta-container {
