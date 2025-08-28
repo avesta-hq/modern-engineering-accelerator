@@ -77,7 +77,7 @@ const config = {
       },
       footer: {
         style: "light",
-        copyright: `© ${new Date().getFullYear()} avestahq.com • All rights reserved | Crafted with love for Engineering Excellence`,
+        copyright: `© ${new Date().getFullYear()} avestahq.com • All rights reserved | Crafted with <span class="heart-icon">❤️</span> for Engineering Excellence`,
       },
       prism: {
         theme: lightCodeTheme,
