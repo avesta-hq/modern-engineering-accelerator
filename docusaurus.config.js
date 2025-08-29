@@ -8,16 +8,16 @@ const darkCodeTheme = themes.dracula;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Modern Engineering Accelerator",
-  tagline: "Accelerating Through Excellence",
+  tagline: "Modern Engineering Practices & Continuous Delivery Excellence",
   favicon: "img/favicon.svg",
 
   // Set the production url of your site here
-  url: "https://modern-engineering-accelerator.dev",
+  url: "https://cdacademy.avestahq.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   baseUrl: "/",
 
   // GitHub pages deployment config
-  organizationName: "chirag1507",
+  organizationName: "Avesta HQ",
   projectName: "modern-engineering-accelerator",
 
   onBrokenLinks: "warn",
@@ -39,7 +39,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl:
-            "https://github.com/chirag1507/modern-engineering-accelerator/tree/main/",
+            "https://github.com/avesta-hq/modern-engineering-accelerator/tree/main/",
           routeBasePath: "docs",
           path: "docs",
         },
@@ -47,6 +47,18 @@ const config = {
           customCss: require.resolve("./src/css/custom.css"),
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      "@docusaurus/plugin-sitemap",
+      {
+        changefreq: "weekly",
+        priority: 0.5,
+        ignorePatterns: ["/tags/**"],
+        filename: "sitemap.xml",
+      },
     ],
   ],
 
