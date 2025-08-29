@@ -156,7 +156,7 @@ h1:first-of-type {
 }
 
 .gradient-carnation-pink .learn-more {
-  color: rgba(255, 255, 255, 0.95);
+  color: #ffffff !important;
   font-weight: 700;
 }
 
@@ -175,7 +175,7 @@ h1:first-of-type {
 }
 
 .gradient-cloud-blue .learn-more {
-  color: rgba(255, 255, 255, 0.95);
+  color: #ffffff !important;
   font-weight: 700;
 }
 
@@ -194,7 +194,7 @@ h1:first-of-type {
 }
 
 .gradient-mineral-green .learn-more {
-  color: rgba(255, 255, 255, 0.95);
+  color: #ffffff !important;
   font-weight: 700;
 }
 
@@ -213,7 +213,7 @@ h1:first-of-type {
 }
 
 .gradient-cloud-blue-coral .learn-more {
-  color: rgba(255, 255, 255, 0.95);
+  color: #ffffff !important;
   font-weight: 700;
 }
 
@@ -232,7 +232,7 @@ h1:first-of-type {
 }
 
 .gradient-mineral-green-coral .learn-more {
-  color: rgba(255, 255, 255, 0.95);
+  color: #ffffff !important;
   font-weight: 700;
 }
 
