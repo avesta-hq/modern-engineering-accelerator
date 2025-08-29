@@ -16,37 +16,47 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 
 <div class="features-container">
 <div class="top-row">
-  <div class="feature-card gradient-carnation-pink">
-    <h3>Strong Foundations</h3>
-    <p>Extreme Programming (XP) and Continuous Delivery (CD) principles form the bedrock of efficient software delivery. These foundations are essential before leveraging AI effectively.</p>
-    <a href="/docs/foundation/introduction" class="learn-more">Learn More →</a>
-  </div>
+  <a href="/docs/foundation/introduction" class="card-link">
+    <div class="feature-card gradient-carnation-pink">
+      <h3>Strong Foundations</h3>
+      <p>Extreme Programming (XP) and Continuous Delivery (CD) principles form the bedrock of efficient software delivery. These foundations are essential before leveraging AI effectively.</p>
+      <div class="learn-more">Learn More ↗</div>
+    </div>
+  </a>
 
-  <div class="feature-card gradient-cloud-blue">
-    <h3>Practical Learning</h3>
-    <p>A real-world sandbox environment for hands-on experience with XP and CD practices, demonstrating how to implement CD principles in practice.</p>
-    <a href="/docs/sandbox/overview" class="learn-more">Explore Sandbox →</a>
-  </div>
+  <a href="/docs/sandbox/overview" class="card-link">
+    <div class="feature-card gradient-cloud-blue">
+      <h3>Practical Learning</h3>
+      <p>A real-world sandbox environment for hands-on experience with XP and CD practices, demonstrating how to implement CD principles in practice.</p>
+      <div class="learn-more">Explore Sandbox ↗</div>
+    </div>
+  </a>
 
-  <div class="feature-card gradient-mineral-green">
-    <h3>Strategic Solutions</h3>
-    <p>Data-driven tools for measuring and improving engineering effectiveness, enhanced by AI capabilities built on solid engineering practices.</p>
-    <a href="/docs/advanced/test-shield" class="learn-more">Discover Tools →</a>
-  </div>
+  <a href="/docs/advanced/test-shield" class="card-link">
+    <div class="feature-card gradient-mineral-green">
+      <h3>Strategic Solutions</h3>
+      <p>Data-driven tools for measuring and improving engineering effectiveness, enhanced by AI capabilities built on solid engineering practices.</p>
+      <div class="learn-more">Discover Tools ↗</div>
+    </div>
+  </a>
 </div>
 
 <div class="bottom-row">
-  <div class="feature-card gradient-cloud-blue-coral">
-    <h3>Scalable Knowledge</h3>
-    <p>A platform for organizations to learn and implement engineering best practices through standardized operating procedures (SOPs) aligned with XP/CD principles.</p>
-    <a href="/docs/foundation/engineering-sops" class="learn-more">Browse SOPs →</a>
-  </div>
+  <a href="/docs/foundation/engineering-sops" class="card-link">
+    <div class="feature-card gradient-cloud-blue-coral">
+      <h3>Scalable Knowledge</h3>
+      <p>A platform for organizations to learn and implement engineering best practices through standardized operating procedures (SOPs) aligned with XP/CD principles.</p>
+      <div class="learn-more">Browse SOPs ↗</div>
+    </div>
+  </a>
 
-  <div class="feature-card gradient-mineral-green-coral">
-    <h3>The AI Advantage</h3>
-    <p>While others rush to adopt AI tools, true competitive advantage comes from using AI on top of strong engineering foundations. We help you build excellence first, then leverage AI to accelerate your well-established practices.</p>
-    <a href="/docs/foundation/introduction" class="learn-more">Learn Our Approach →</a>
-  </div>
+  <a href="/docs/foundation/introduction" class="card-link">
+    <div class="feature-card gradient-mineral-green-coral">
+      <h3>The AI Advantage</h3>
+      <p>While others rush to adopt AI tools, true competitive advantage comes from using AI on top of strong engineering foundations. We help you build excellence first, then leverage AI to accelerate your well-established practices.</p>
+      <div class="learn-more">Learn Our Approach ↗</div>
+    </div>
+  </a>
 </div>
 </div>
 
@@ -97,14 +107,7 @@ In today's AI-driven world, true speed comes from strong engineering foundations
 
 <style>
 {`
-/* Custom title styling */
-h1:first-of-type {
-  color: #224242 !important;
-}
-
-[data-theme="dark"] h1:first-of-type {
-  color: #fe6a3a !important;
-}
+/* Custom title styling - H1 colors now handled in global CSS */
 
 .features-container {
   display: flex;
@@ -125,6 +128,12 @@ h1:first-of-type {
   gap: 2rem;
 }
 
+.top-row .card-link,
+.bottom-row .card-link {
+  height: 100%;
+  display: flex;
+}
+
 .feature-card {
   padding: 2rem;
   border-radius: 16px;
@@ -134,6 +143,12 @@ h1:first-of-type {
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-link:hover .feature-card {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 .feature-card:hover {
@@ -251,6 +266,11 @@ h1:first-of-type {
   .bottom-row {
     grid-template-columns: 1fr;
   }
+
+  .top-row .card-link,
+  .bottom-row .card-link {
+    width: 100%;
+  }
 }
 
 .benefits-container {
@@ -284,11 +304,24 @@ h1:first-of-type {
   margin: 0;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.card-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .learn-more {
   display: inline-block;
   margin-top: auto;
   padding-top: 1rem;
   font-weight: 600;
+  pointer-events: none;
 }
 `}
 </style>

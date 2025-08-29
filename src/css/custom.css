@@ -326,7 +326,38 @@ article h1,
     Roboto, sans-serif !important;
   font-weight: 700 !important;
   letter-spacing: normal;
-  color: var(--avesta-deep-teal-darker); /* Deep Teal darker shade */
+}
+
+/* Generic H1 title colors for docs pages and index.md */
+/* Target content H1 elements (docs and index page) */
+.main-wrapper h1,
+article h1,
+.markdown h1,
+main h1:first-of-type,
+.docusaurus-wrapper h1:first-of-type {
+  color: #224242 !important; /* Deep Teal for light theme */
+}
+
+/* Dark theme H1 colors */
+[data-theme="dark"] .main-wrapper h1,
+[data-theme="dark"] article h1,
+[data-theme="dark"] .markdown h1,
+[data-theme="dark"] main h1:first-of-type,
+[data-theme="dark"] .docusaurus-wrapper h1:first-of-type {
+  color: #fe6a3a !important; /* Avesta Coral for dark theme */
+}
+
+/* Ensure navbar title and hero title keep their specific colors */
+.navbar__title {
+  color: var(--avesta-deep-teal) !important;
+}
+
+[data-theme="dark"] .navbar__title {
+  color: #dcd9c8 !important;
+}
+
+.hero__title {
+  color: white !important;
 }
 
 /* Force Aktiv Grotesk on other headings */
