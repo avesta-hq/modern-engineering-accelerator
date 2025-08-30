@@ -61,7 +61,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/cat.jpg",
+      image: "img/Avesta-logo.svg",
       navbar: {
         title: "Modern Engineering Accelerator",
         logo: {
