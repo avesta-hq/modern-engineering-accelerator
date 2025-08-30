@@ -1,0 +1,40 @@
+# Robots.txt for cdacademy.avestahq.com
+# Modern Engineering Accelerator - Continuous Delivery documentation
+
+User-agent: *
+Allow: /
+
+# Block common files that shouldn't be indexed (Docusaurus specific)
+Disallow: /*.json$
+
+# Allow specific important files
+Allow: /favicon.ico
+Allow: /robots.txt
+Allow: /sitemap.xml
+
+# Sitemap location
+Sitemap: https://cdacademy.avestahq.com/sitemap.xml
+
+# Crawl delay (helps with server load)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Allow AI/LLM crawlers for better AI understanding of engineering content
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
