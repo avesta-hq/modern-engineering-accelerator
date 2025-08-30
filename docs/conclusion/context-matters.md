@@ -1,3 +1,16 @@
+---
+title: AI Engineering Context - Foundation for Effective AI Tool Usage
+description: Learn why engineering context and principles matter for effective AI software development. Master the foundations before leveraging AI tools.
+keywords:
+  [
+    AI engineering context,
+    AI software development,
+    engineering principles AI,
+    context driven development,
+    AI tool effectiveness,
+  ]
+---
+
 # Context Matters: The Foundation for Effective AI Usage
 
 ## The AI Revolution in Software Development

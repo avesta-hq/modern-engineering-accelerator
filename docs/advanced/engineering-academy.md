@@ -1,3 +1,16 @@
+---
+title: Engineering Excellence Academy - XP and CD Training Program
+description: Build engineering excellence through structured XP and CD training. Professional development for software engineers, tech leads, and engineering managers.
+keywords:
+  [
+    engineering excellence academy,
+    engineering training program,
+    XP CD coaching,
+    technical leadership development,
+    software engineering education,
+  ]
+---
+
 # Engineering Excellence Academy
 
 ## Overview

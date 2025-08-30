@@ -1,3 +1,16 @@
+---
+title: User Story Mapping and Product Discovery Best Practices
+description: Learn user story mapping techniques and product discovery practices for effective agile development and MVP planning.
+keywords:
+  [
+    user story mapping,
+    product discovery practices,
+    agile user stories,
+    MVP planning,
+    product requirements,
+  ]
+---
+
 # Product Discovery Practices
 
 ## Understanding User Story Mapping

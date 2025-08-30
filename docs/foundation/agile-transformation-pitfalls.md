@@ -1,3 +1,16 @@
+---
+title: Agile Transformation Pitfalls - Why Engineering Practices Matter
+description: Avoid common agile transformation mistakes. Learn why technical practices are essential for successful agile implementation and sustainable delivery.
+keywords:
+  [
+    agile transformation pitfalls,
+    engineering practices failure,
+    scrum without technical practices,
+    agile implementation mistakes,
+    technical debt accumulation,
+  ]
+---
+
 # The Pitfalls of Agile Transformation Without Engineering Excellence
 
 This case study, based on Valentina Jemuović's experience, illustrates a common pattern in our industry: attempting agile transformation without proper engineering practices. It serves as a powerful reminder of why we emphasize XP, CD, and technical excellence as the foundation for true agility.

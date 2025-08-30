@@ -1,3 +1,16 @@
+---
+title: CD Sandbox Project - Real-World TDD and Continuous Delivery
+description: Learn TDD and continuous delivery through the Digital Kudos Wall sandbox project. Practice XP implementation beyond simple katas with real-world examples.
+keywords:
+  [
+    CD sandbox project,
+    continuous delivery sandbox,
+    TDD real world example,
+    digital kudos wall,
+    practical XP implementation,
+  ]
+---
+
 # CD Sandbox Project Overview
 
 While code katas are useful for learning basic practices, they often fall short in demonstrating real-world software development complexities. As highlighted in industry discussions, developers need more than just basic exercises - they need to understand how practices like TDD, CI/CD, and Clean Architecture work in real-world scenarios with actual user stories, multiple architectural layers, and complex infrastructure.

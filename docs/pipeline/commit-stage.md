@@ -1,3 +1,16 @@
+---
+title: Commit Stage CI/CD - Automated Testing and Quality Gates
+description: Learn how to implement an effective commit stage in your CI/CD pipeline with automated testing, code quality checks, and fast feedback loops.
+keywords:
+  [
+    commit stage CI CD,
+    continuous integration commit stage,
+    automated testing pipeline,
+    build verification,
+    code quality gates,
+  ]
+---
+
 # Commit Stage
 
 ## Purpose

@@ -1,3 +1,16 @@
+---
+title: CD Implementation Plan - Engineering Transformation Roadmap
+description: Step-by-step continuous delivery implementation plan for software delivery transformation and development process improvement.
+keywords:
+  [
+    CD implementation plan,
+    continuous delivery roadmap,
+    software delivery implementation,
+    engineering transformation plan,
+    development process improvement,
+  ]
+---
+
 # Implementation Plan
 
 ## System Test First Approach

@@ -1,3 +1,16 @@
+---
+title: Engineering Standard Operating Procedures (SOPs) for Quality
+description: Implement battle-tested engineering SOPs for consistent code quality, testing procedures, and development practices across teams.
+keywords:
+  [
+    engineering standard operating procedures,
+    engineering SOPs,
+    code quality standards,
+    testing procedures,
+    development consistency,
+  ]
+---
+
 # Engineering Standard Operating Procedures (SOPs)
 
 ## Overview

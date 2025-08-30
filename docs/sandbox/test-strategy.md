@@ -1,3 +1,16 @@
+---
+title: Modern Test Pyramid - Comprehensive Testing Strategy Guide
+description: Implement modern test pyramid approach with component testing, contract testing, acceptance testing, and comprehensive test automation strategy.
+keywords:
+  [
+    modern test pyramid,
+    test automation strategy,
+    component testing approach,
+    acceptance testing framework,
+    contract testing implementation,
+  ]
+---
+
 # Test Strategy
 
 The Digital Kudos Wall project implements a modern testing strategy based on the Modern Test Pyramid approach. This strategy moves beyond the traditional test pyramid (unit, integration, E2E) to provide more effective testing for modern architectures.

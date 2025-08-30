@@ -1,3 +1,16 @@
+---
+title: Extreme Programming Practices - XP Values and Technical Excellence
+description: Master Extreme Programming (XP) practices including TDD, pair programming, and refactoring for sustainable software development.
+keywords:
+  [
+    extreme programming practices,
+    XP values principles,
+    test driven development TDD,
+    pair programming benefits,
+    simple design refactoring,
+  ]
+---
+
 # Extreme Programming Practices
 
 Extreme Programming (XP), as defined by Kent Beck, is about "enabling change." It's built on values of simplicity, communication, feedback, courage, and respect. As Martin Fowler emphasizes, XP is a deliberate and disciplined approach to software development that emphasizes technical excellence.

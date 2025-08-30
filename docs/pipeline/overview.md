@@ -1,3 +1,16 @@
+---
+title: CI/CD Pipeline Overview - Complete Software Delivery Process
+description: Comprehensive guide to CI/CD pipeline implementation with automated deployment, testing stages, and quality gates for reliable software delivery.
+keywords:
+  [
+    CI CD pipeline overview,
+    continuous delivery pipeline,
+    automated deployment pipeline,
+    software delivery process,
+    DevOps pipeline stages,
+  ]
+---
+
 # Pipeline Overview
 
 ## Pipeline Philosophy

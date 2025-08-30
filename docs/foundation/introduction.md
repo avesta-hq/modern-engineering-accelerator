@@ -1,3 +1,16 @@
+---
+title: Modern Engineering Accelerator - Building Speed Through Excellence
+description: Build engineering excellence through proven XP and CD practices. Learn how to move fast sustainably with AI tools built on solid engineering foundations.
+keywords:
+  [
+    modern engineering accelerator,
+    engineering excellence,
+    continuous delivery practices,
+    extreme programming XP,
+    AI engineering foundations,
+  ]
+---
+
 # Modern Engineering Accelerator
 
 ## Building the Foundation for Speed and Innovation

@@ -1,3 +1,16 @@
+---
+title: CodeScene Integration - Code Health Analysis and Technical Debt
+description: Integrate CodeScene for comprehensive code health analysis, technical debt tracking, hotspot detection, and quality metrics in your development workflow.
+keywords:
+  [
+    codescene integration,
+    code health analysis,
+    technical debt tracking,
+    hotspot detection,
+    code quality metrics,
+  ]
+---
+
 # CodeScene Integration
 
 ## Overview

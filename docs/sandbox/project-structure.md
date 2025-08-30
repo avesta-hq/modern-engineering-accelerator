@@ -1,3 +1,16 @@
+---
+title: Clean Architecture Project Structure - Software Organization Guide
+description: Organize software projects with clean architecture principles, proper repository structure, and development guidelines for maintainable code.
+keywords:
+  [
+    clean architecture project structure,
+    software project organization,
+    clean code architecture,
+    repository structure,
+    development guidelines,
+  ]
+---
+
 # Project Structure
 
 ## Repository Organization

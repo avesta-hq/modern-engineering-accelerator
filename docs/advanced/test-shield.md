@@ -1,3 +1,16 @@
+---
+title: Test Shield Service - Intelligent Code Analysis and Test Automation
+description: Combine code analysis with modern test pyramid principles for comprehensive testing strategy, refactoring targets, and improved code quality.
+keywords:
+  [
+    test shield service,
+    code analysis automation,
+    test automation strategy,
+    refactoring target identification,
+    code health metrics,
+  ]
+---
+
 # Test Shield Service
 
 ## Overview

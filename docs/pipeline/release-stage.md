@@ -1,3 +1,16 @@
+---
+title: Automated Release Management - Deployment Pipeline Best Practices
+description: Master automated release management with contract verification, environment deployment, and reliable release processes for continuous delivery.
+keywords:
+  [
+    automated release management,
+    deployment automation,
+    contract verification,
+    release pipeline,
+    environment deployment,
+  ]
+---
+
 # Release Stage
 
 ## Purpose

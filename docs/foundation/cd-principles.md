@@ -1,3 +1,16 @@
+---
+title: Core Principles of Continuous Delivery (CD) for Modern Engineering
+description: Discover the fundamental principles of Continuous Delivery (CD) that enable engineering teams to deliver software faster and more reliably.
+keywords:
+  [
+    continuous delivery principles,
+    CD best practices,
+    software delivery automation,
+    build quality in,
+    deployment pipeline,
+  ]
+---
+
 # Continuous Delivery Principles
 
 Continuous Delivery (CD) is a set of principles and practices that enable teams to deliver software rapidly, reliably, and repeatably. As Dave Farley emphasizes, CD is not just about tools or automation - it's about building a reliable, sustainable delivery process that enables true agility.

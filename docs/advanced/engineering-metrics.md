@@ -1,3 +1,16 @@
+---
+title: Engineering Metrics Playbook - Measure and Improve Development
+description: Comprehensive guide to engineering metrics for measuring software development productivity, code quality, and continuous delivery effectiveness.
+keywords:
+  [
+    engineering metrics playbook,
+    software development metrics,
+    engineering productivity metrics,
+    continuous delivery metrics,
+    code quality measurement,
+  ]
+---
+
 # Engineering Metrics
 
 ## Overview
