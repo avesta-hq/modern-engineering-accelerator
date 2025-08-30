@@ -49,9 +49,6 @@ const config = {
       }),
     ],
   ],
-
-  plugins: [],
-
   themes: ["@docusaurus/theme-mermaid"],
   markdown: {
     mermaid: true,
